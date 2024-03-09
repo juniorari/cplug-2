@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    app:
+        build: .
+        container_name: cplug_app_2
+        ports:
+            - 8081:80
+        volumes:
+            - ./:/var/www/html
